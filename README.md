@@ -9,9 +9,9 @@ and
 [Ziwei Liu](https://liuziwei7.github.io/) </br>
 In IEEE International Conference on Computer Vision (**ICCV**), 2021.
 
-From [MMLab@NTU](https://www.mmlab-ntu.com/index.html) affliated with S-Lab, Nanyang Technological University and SenseTime Research.
+From [MMLab@NTU](https://www.mmlab-ntu.com/index.html) affliated with S-Lab, Nanyang Technological University.
 
-<img src="./assets/celeba_dialog.png" width="50%">
+<img src="./assets/celeba_dialog.png" width="80%">
 
 [**[Project Page]**](https://www.mmlab-ntu.com/project/talkedit/) | [**[Paper]**](https://arxiv.org/abs/2109.04425) | [**[Code]**](https://github.com/yumingj/Talk-to-Edit) | [**[Video]**](https://www.youtube.com/watch?v=ZKMkQhkMXPI)
 
