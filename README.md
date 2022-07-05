@@ -71,16 +71,11 @@ Below is the color-to-label parsing information:
 | 15: 'ear_r' | 16: 'neck_l' | 17: 'neck' | 18: 'cloth' | | |
 
 ```python
-color_list = [
-    [0, 0, 0], [204, 0, 0], [76, 153, 0], [204, 204, 0], [51, 51, 255],
-    [204, 0, 204], [0, 255, 255], [255, 204, 204], [102, 51, 0], [255, 0, 0],
-    [102, 204, 0], [255, 255, 0], [0, 0, 153], [0, 0, 204], [255, 51, 153],
-    [0, 204, 204], [0, 51, 0], [255, 153, 51], [0, 204, 0]]
-label_dict = {
-    0: 'background',	1: 'skin',	2: 'nose', 3: 'eye_g',	4: 'l_eye',
-    5: 'r_eye', 6: 'l_brow',	7: 'r_brow',	8: 'l_ear', 9: 'r_ear',
-    10: 'mouth',	11: 'u_lip', 12: 'l_lip',	13: 'hair',	14: 'hat',
-    15: 'ear_r',	16: 'neck_l',	17: 'neck', 18: 'cloth',}
+from PIL import Image
+import numpy as np
+
+segm = Image.open(f)
+segm = np.array(segm) # shape: [750, 1101]
 ```
 
 ## Agreement
