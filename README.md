@@ -29,12 +29,12 @@ The dataset is proposed in [Talk-to-Edit](https://github.com/yumingj/Talk-to-Edi
 You can download using the following links:
 
 | Path | Size | Files | Format | Description
-| :--- | :---- | ----: | :----: | :----------
+| :--- | :-------- | --: | :----: | :----------
 | [CelebA-Dialog-combined](https://drive.google.com/drive/folders/1YRRaC3LWLHorVhFNJPzVqLrUlA10eLEJ?usp=sharing) | ~4.4 GB | - | | main folder
 | &boxvr;&nbsp; [image](https://drive.google.com/file/d/1A2dNWabg6_um-V3lhw1tyead5hCpjaW8/view?usp=sharing) | ~2.7 GB | 30,000 | JPG | images from CelebA-HQ
-| &boxvr;&nbsp; [classification_label](https://drive.google.com/drive/folders/1aEBwVe4syZjCayambAnonfAI2m3JsMcP?usp=sharing) | ~4.1 MB | 2 | txt | manually annotated parsing labels
+| &boxvr;&nbsp; [classification label](https://drive.google.com/drive/folders/1aEBwVe4syZjCayambAnonfAI2m3JsMcP?usp=sharing) | ~4.1 MB | 2 | txt | manually annotated parsing labels
 | &boxvr;&nbsp; [text](https://drive.google.com/drive/folders/1CzTZm8suzDWdoN6DQmv11tsZotYo1Yfu?usp=sharing) | ~27 MB | 4 | TXT and JSON | natural language captions and editing requests
-| &boxvr;&nbsp; [mask](https://drive.google.com/drive/folders/1bRZmrUBz8y0ObTr8AlkbVfyUco5R2I0z?usp=sharing) | ~1.8 GB | - | PNG | segmentation masks (1) [binary](https://drive.google.com/file/d/1MUYHw-IGP5FHy0yJzgvXNZojlcnCq7IE/view?usp=sharing) (2) [colorized](https://drive.google.com/file/d/1w8DMOW8tXsCGUD99-VsdzXmXjL2BGlp9/view?usp=sharing)
+| &boxvr;&nbsp; [mask](https://drive.google.com/drive/folders/1bRZmrUBz8y0ObTr8AlkbVfyUco5R2I0z?usp=sharing) | ~1.8 GB | - | PNG | segmentation masks (1) [binary](https://drive.google.com/file/d/1MUYHw-IGP5FHy0yJzgvXNZojlcnCq7IE/view?usp=sharing) (2) [colorized](https://drive.google.com/file/d/1q2DWtGA1h4NcS1Az4OX-5sbLXsGWJZWq/view?usp=sharing)
 
 
 ### Image
@@ -55,8 +55,8 @@ You can download using the following links:
 ### Mask
 
 We preprocess the facial segmentation masks of [CelebAMask-HQ](https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebAMask_HQ.html) to ease future research.
-* You can directly download the ***binary masks for individual labels*** for each image. These are the same as the ones provided in CelebAMask_HQ. ([Download link]())
-* We produce the ***combined colorized mask*** for each image following the parsing of [CelebAMask-HQ](https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebAMask_HQ.html). ([Download link]())
+* You can directly download the ***binary masks for individual labels*** for each image. These are the same as the ones provided in CelebAMask-HQ. ([Download link](https://drive.google.com/file/d/1MUYHw-IGP5FHy0yJzgvXNZojlcnCq7IE/view?usp=sharing))
+* We produce the ***combined colorized mask*** for each image following the parsing of CelebAMask-HQ. ([Download link](https://drive.google.com/file/d/1q2DWtGA1h4NcS1Az4OX-5sbLXsGWJZWq/view?usp=sharing))
 
 
 
@@ -75,7 +75,7 @@ from PIL import Image
 import numpy as np
 
 segm = Image.open(f)
-segm = np.array(segm) # shape: [750, 1101]
+segm = np.array(segm) # shape: [512, 512]
 ```
 
 ## Agreement
