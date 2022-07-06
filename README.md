@@ -56,13 +56,20 @@ You can download using the following links:
 
 ### Image
 
-* 30,000 face images selected from the CelebA dataset by following CelebA-HQ
-* High resolution of 1024 x 1024
+* **HQ**: 
+  * 30,000 face images selected from the CelebA dataset by following CelebA-HQ
+  * High resolution of 1024 x 1024
+* **standard**: 
+  * 202,599 face images from the CelebA dataset 
 
-### Classification Label
+### Fine-Grained Label
+
+* 5 fine-grained attributes annotations per image: <em>Bangs, Eyeglasses, Beard, Smiling, and Age</em>
+
+### Binary Label
 
 * 40 binary attributes annotations per image
-* 5 fine-grained attributes annotations per image: Bangs, Eyeglasses, Beard, Smiling, and Age
+
 
 ### Text
 
