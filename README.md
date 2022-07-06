@@ -30,17 +30,26 @@ You can download using the following links:
 * "**HQ**" refers to images and corresponding annotations for the 30,000 high-resolutions images following CelebA-HQ.
 * "**standard**" refers to images and corresponding annotations for original 202,599 CelebA images.
 
-| Path | Size | Files | Format | Description
-| :--- | :-------- | --: | :----: | :----------
+| Link (HQ) | Size | Files | Format | Description
+| :--- | :--- | :---: | :----: | :----------
 | [CelebA-Dialog (HQ)](https://drive.google.com/drive/folders/1YRRaC3LWLHorVhFNJPzVqLrUlA10eLEJ?usp=sharing) | ~4.4 GB |  | | 30,000 high-resolution images and corresponding annotations
 | &boxvr;&nbsp; [image (HQ)](https://drive.google.com/file/d/1A2dNWabg6_um-V3lhw1tyead5hCpjaW8/view?usp=sharing) | ~2.7 GB | 30,000 | JPG | images from CelebA-HQ
-| &boxvr;&nbsp; [classification label (HQ)](https://drive.google.com/drive/folders/1aEBwVe4syZjCayambAnonfAI2m3JsMcP?usp=sharing) | ~4.1 MB | 2 | TXT | manually annotated classification labels
+| &boxvr;&nbsp; [fine-grained label (HQ)](https://drive.google.com/file/d/1oscEGdTfvBqohlagtp9dfgduGOfgXZxx/view?usp=sharing) | ~600 KB | 1 | TXT | fine-grained labels for 5 attributes
+| &boxvr;&nbsp; [binary label (HQ)](https://drive.google.com/file/d/1QvfDVRW7W3-MOCro1EPdnhuXnQ1STOGG/view?usp=sharing) | ~3.5 MB | 1 | TXT | binary labels for 40 attributes
 | &boxvr;&nbsp; [text (HQ)](https://drive.google.com/drive/folders/1CzTZm8suzDWdoN6DQmv11tsZotYo1Yfu?usp=sharing) | ~27 MB | 4 | TXT and JSON | natural language captions and editing requests
 | &boxvr;&nbsp; [mask (HQ)](https://drive.google.com/drive/folders/1bRZmrUBz8y0ObTr8AlkbVfyUco5R2I0z?usp=sharing) | ~1.8 GB |  | PNG | segmentation masks (1) [binary](https://drive.google.com/file/d/1MUYHw-IGP5FHy0yJzgvXNZojlcnCq7IE/view?usp=sharing) (2) [colorized](https://drive.google.com/file/d/1q2DWtGA1h4NcS1Az4OX-5sbLXsGWJZWq/view?usp=sharing)
+
+| Link (standard) | Size | Files | Format | Description
+| :--- | :--- | :---: | :----: | :----------
 | [CelebA-Dialog (standard)](https://drive.google.com/drive/folders/18nejI_hrwNzWyoF6SW8bL27EYnM4STAs?usp=sharing) |  |  | | 202,599 original CelebA images and corresponding annotations
 | &boxvr;&nbsp; [image (standard)](https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg?resourcekey=0-rJlzl934LzC-Xp28GeIBzQ&usp=sharing) | |  |  | images from CelebA
-| &boxvr;&nbsp; classification label (standard) | |  | TXT | manually annotated classification labels: (1) [fine-grained labels for 5 attributes](https://drive.google.com/file/d/1wZcVEjJ5LwP1Ciuc3j_RFw9Vcusj4UEU/view?usp=sharing), (2) [binary labels for 40 attributes](https://drive.google.com/file/d/0B7EVK8r0v71pblRyaVFSWGxPY0U/view?usp=sharing&resourcekey=0-YW2qIuRcWHy_1C2VaRGL3Q)
-| &boxvr;&nbsp; [text (standard)](https://drive.google.com/drive/folders/18nejI_hrwNzWyoF6SW8bL27EYnM4STAs?usp=sharing) | ~14 MB |  | TXT and JSON | (1) [editing request](https://drive.google.com/drive/folders/1Ajt1xEwMQ0bkrHc-F1tSgeShnpmnLZ_N?usp=sharing), (2) [image caption](https://drive.google.com/drive/folders/1HmY0Qvq66B0SNvDLTt2kHem8vVuV3FQx?usp=sharing)
+| &boxvr;&nbsp; [fine-grained label (standard)](https://drive.google.com/file/d/1wZcVEjJ5LwP1Ciuc3j_RFw9Vcusj4UEU/view?usp=sharing) | ~4 MB | 1 | TXT | fine-grained labels for 5 attributes
+| &boxvr;&nbsp; [binary label (standard)](https://drive.google.com/file/d/0B7EVK8r0v71pblRyaVFSWGxPY0U/view?usp=sharing&resourcekey=0-YW2qIuRcWHy_1C2VaRGL3Q) | ~25 MB | 1 | TXT | binary labels for 40 attributes
+| &boxvr;&nbsp; [text (standard)](https://drive.google.com/drive/folders/18nejI_hrwNzWyoF6SW8bL27EYnM4STAs?usp=sharing) | ~14 MB |  | TXT and JSON | natural language captions and editing requests
+
+
+| Link (mapping) | Size | Files | Format | Description
+| :--- | :--- | :---: | :----: | :----------
 | [HQ-to-standard mapping](https://drive.google.com/file/d/10msPsx1Fouh5h8m8LoSaPTh9R4dv_mLG/view?usp=sharing) | ~1 MB | 1 | TXT | The mapping between 30,000 CelebA-HQ images and the 202,599 CelebA images
 
 
