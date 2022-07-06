@@ -52,7 +52,7 @@ You can download using the following links:
 | :--- | :--- | :---: | :----: | :----------
 | [HQ-to-standard mapping](https://drive.google.com/file/d/10msPsx1Fouh5h8m8LoSaPTh9R4dv_mLG/view?usp=sharing) | ~1 MB | 1 | TXT | The mapping between 30,000 CelebA-HQ images and the 202,599 CelebA images
 
-
+## Details
 
 ### Image
 
