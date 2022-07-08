@@ -13,7 +13,7 @@ From [MMLab@NTU](https://www.mmlab-ntu.com/index.html) affliated with S-Lab, Nan
 
 <img src="./assets/celeba_dialog.png" width="80%">
 
-[**[Project Page]**](https://www.mmlab-ntu.com/project/talkedit/) | [**[Paper]**](https://arxiv.org/abs/2109.04425) | [**[Code]**](https://github.com/yumingj/Talk-to-Edit) | [**[Video]**](https://www.youtube.com/watch?v=ZKMkQhkMXPI)
+[**[Project Page]**](https://www.mmlab-ntu.com/project/talkedit/) | [**[Paper]**](https://arxiv.org/abs/2109.04425) | [**[Code]**](https://github.com/yumingj/Talk-to-Edit) | [**[Video]**](https://www.youtube.com/watch?v=ZKMkQhkMXPI) | [**[Web Page]**](https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebA_Dialog.html)
 
 **CelebA-Dialog** is a large-scale visual-language face dataset with the following features:
 - Facial images are annotated with rich **fine-grained labels**, which classify one attribute into multiple degrees according to its semantic meaning.
