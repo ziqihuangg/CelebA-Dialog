@@ -38,6 +38,7 @@ You can download using the following links:
 | &boxvr;&nbsp; [binary label (HQ)](https://drive.google.com/file/d/1QvfDVRW7W3-MOCro1EPdnhuXnQ1STOGG/view?usp=sharing) | ~3.5 MB | 1 | TXT | binary labels for 40 attributes
 | &boxvr;&nbsp; [text (HQ)](https://drive.google.com/drive/folders/1CzTZm8suzDWdoN6DQmv11tsZotYo1Yfu?usp=sharing) | ~27 MB | 4 | TXT and JSON | natural language captions and editing requests
 | &boxvr;&nbsp; [mask (HQ)](https://drive.google.com/drive/folders/1bRZmrUBz8y0ObTr8AlkbVfyUco5R2I0z?usp=sharing) | ~1.8 GB |  | PNG | segmentation masks (1) [binary](https://drive.google.com/file/d/1MUYHw-IGP5FHy0yJzgvXNZojlcnCq7IE/view?usp=sharing) (2) [colorized](https://drive.google.com/file/d/1q2DWtGA1h4NcS1Az4OX-5sbLXsGWJZWq/view?usp=sharing)
+| &boxvr;&nbsp; [identity (HQ) (coming soon)]() |  | 1 | TXT | identity label of each image
 
 | Link (standard) | Size | Files | Format | Description
 | :--- | :--- | :---: | :----: | :----------
@@ -46,6 +47,7 @@ You can download using the following links:
 | &boxvr;&nbsp; [fine-grained label (standard)](https://drive.google.com/file/d/1wZcVEjJ5LwP1Ciuc3j_RFw9Vcusj4UEU/view?usp=sharing) | ~4 MB | 1 | TXT | fine-grained labels for 5 attributes
 | &boxvr;&nbsp; [binary label (standard)](https://drive.google.com/file/d/0B7EVK8r0v71pblRyaVFSWGxPY0U/view?usp=sharing&resourcekey=0-YW2qIuRcWHy_1C2VaRGL3Q) | ~25 MB | 1 | TXT | binary labels for 40 attributes
 | &boxvr;&nbsp; [text (standard)](https://drive.google.com/drive/folders/18nejI_hrwNzWyoF6SW8bL27EYnM4STAs?usp=sharing) | ~14 MB |  | TXT and JSON | natural language captions and editing requests
+| &boxvr;&nbsp; [identity (standard)](https://drive.google.com/file/d/1_ee_0u7vcNLOfNLegJRHmolfH5ICW-XS/view?usp=sharing) |  ~3.3MB | 1 | TXT | identity label of each image
 
 
 | Link (mapping) | Size | Files | Format | Description
@@ -56,11 +58,11 @@ You can download using the following links:
 
 ### Image
 
-* **HQ**: 
+* **HQ**:
   * 30,000 face images selected from the CelebA dataset by following CelebA-HQ
   * High resolution of 1024 x 1024
-* **standard**: 
-  * 202,599 face images from the CelebA dataset 
+* **standard**:
+  * 202,599 face images from the CelebA dataset
 
 ### Fine-Grained Label
 
@@ -83,8 +85,6 @@ We preprocess the facial segmentation masks of [CelebAMask-HQ](https://mmlab.ie.
 * We produce the ***combined colorized mask*** for each image following the parsing of CelebAMask-HQ. ([Download link](https://drive.google.com/file/d/1q2DWtGA1h4NcS1Az4OX-5sbLXsGWJZWq/view?usp=sharing))
 
 
-
-
 Below is the color-to-label parsing information:
 
 | Label list | | | | |
@@ -101,6 +101,10 @@ import numpy as np
 segm = Image.open(f)
 segm = np.array(segm) # shape: [512, 512]
 ```
+
+### Identity
+Some images are of the same person. There are totally 10,177 identities in the dataset. On average, there are around 20 images per identity in CelebA (standard), and 3 images per identity in CelebA-HQ.
+
 
 ## Agreement
 * The CelebA-Dialog dataset is available for non-commercial research purposes only.
